@@ -1,4 +1,8 @@
-
+" ==========================================
+" Pathogen
+" ==========================================
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
 " disable vi error messages 
 set nocompatible
 
@@ -81,7 +85,7 @@ set hidden
 set mousehide
 
 "colorscheme
-"colorscheme vibrantink
+colorscheme vividchalk
 
 "Making window switching easier
 map <C-h> <C-w>h

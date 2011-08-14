@@ -7,7 +7,7 @@ call pathogen#helptags()
 set nocompatible
 
 " Save those nasty swp files where they belong
- set dir=$temp
+ set dir=~/.temp
 
 " Tab width 2 change tabs into spaces and smart indent
 set tabstop=2
@@ -112,8 +112,6 @@ au BufNewFile,BufRead *.c,*.cc,*.h,*.cpp,*.hpp,*.cxx setlocal cindent
 au BufNewFile,BufRead *.c,*.cc,*.h,*.cpp,*.hpp,*.cxx setlocal comments=
 au BufNewFile,BufRead *.c,*.cc,*.h,*.cpp,*.hpp,*.cxx setlocal et
 
-" Making those damn .swp files go away
- set nobackup
 
 " Show syntax highlighting groups for word under cursor
 nmap <C-S-P> :call <SID>SynStack()<CR>
